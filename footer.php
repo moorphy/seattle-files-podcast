@@ -1,14 +1,17 @@
+
 </div><!-- END MIDDLE -->
 
-<?php get_sidebar('foot'); ?>
 
 <footer>
-		<p><?php print ("&copy; " . date ('Y') . " "); ?><a href="#">Your Name Here</a> &bull; Powered by <a href="http://www.wordpress.org/" target="_blank">WordPress</a> &bull; <?php wp_loginout(); ?>.</p>
+<hr />
+<p>Copyright <?php print ("&copy; " . date ('Y') . " "); ?> &bull;
+<a href="http://theseattlefiles.com"> Chris Allen </a> &bull; All Rights Reserved &bull;
+<a href="http://moorphy.com">Built by Mike Murphy</a></p>
+<hr />
 </footer>
 
 </div><!-- END WRAPPER -->
 
-<?php /* wp_footer function must be last item before closing body tag: many plugins use this hook to reference JavaScript files */ ?>
 <?php wp_footer(); ?> 
 </body>
 </html>
