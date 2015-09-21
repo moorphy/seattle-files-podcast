@@ -14,23 +14,14 @@
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
     <link rel="shortcut icon" href="<?php echo esc_url( get_template_directory_uri() ); ?>/favicon.ico" />
-
-	  <?php /*?> Always have wp_head() inside the </head> tag 
-	   of your theme. Many plugins use this hook to add elements 
-		to <head> such as styles, scripts, and meta tags.
-	  <?php */?>
+    
      <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
 
 <div id="wrapper">
 <header>
-
-	<!-- Begin Logo -->
-		<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo('name'); ?></a></h1>
-		<p class="description"><?php bloginfo('description'); ?></p>
-    <!-- End Logo -->
-     
+   
 </header>
 
 <!-- START NAVIGATION -->
@@ -41,6 +32,7 @@
 			'container'  => 'ul', 
 
 		) ); ?>
+    
 </nav>
 <!-- END NAVIGATION -->
 
