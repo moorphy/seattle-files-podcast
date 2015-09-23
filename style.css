@@ -124,17 +124,27 @@ a:focus {
 /* LAYOUT */
 
 #wrapper {
-	clear: both;
-	width: 750px;
-	margin: 20px auto;
+	width:80%;
+	margin: 0px auto;
 	overflow: hidden;
+	float:right;
+	background-color: #FFFFF1;
+	border-left : 1px solid #004A71;
+	box-shadow : 10px 0px 5px 1px #eaeaea;
+}
+#side {
+	width:19%;
+	margin: 0px auto;
+	overflow: hidden;
+	float:left;
 }
 
 
 /* HEADER */
 header {
-	height: 125px;  /*change height as needed to fit your background image */
 }
+
+
 
 #date {
 	font-size: 12px;
@@ -170,60 +180,54 @@ h1 a:focus {
 	
 /* NAVIGATION */
 nav {
-    width:90%;
+    width:100%;
 	font-family: 'archivo_blackregular';
-    text-shadow:#999999 2px 3px 2px;
-    display:block;
-    font-size:20px;
+    text-shadow:#A3A3A3 1px 2px 1px;
+    font-size:25px;
     line-height:30px;
     clear:both;
 }
 
 nav ul {
-	height: 25px;
 	padding: 12px 0 0;
-	margin: 0px auto 0 auto;
-	border-bottom: 2px solid #999;
+	margin: 0px auto;
+	text-decoration: none;
 }
 
 nav li {
-	float: left;
-	list-style: none;
-	text-align: center;
-	margin-right: 30px;
+	float:left;
+	text-decoration: none;
+	padding:2%;
 }
 
 nav li a:link, 
 nav li a:visited {
-	color: #444;
+	color: #696969;
 }
 
-nav li a:hover, 
-nav li a:focus {
-	color: #004A71;
+nav li a:hover, nav li a:focus {
+	color: #006699;
 	padding-bottom: 5px;
-	border: none; 	/* overrides border-bottom on a:hover tags */
+	border: none;
 }
 	
 nav li.current_page_item a:link, 
 nav li.current_page_item a:visited {
-	color: #004A71;
+	color: #006699;
 }
 	
 nav li.current_page_item a:hover,
 nav li.current_page_item a:focus {
-	color: #004A71;
+	color: #006699;
 }
 	
 nav li.current_page_parent a:link {
-	color: #004A71;
-	border-bottom: 1px solid #ddd;
+	color: #006699;
 }
 	
 nav li.current_page_parent a:hover,
 nav li.current_page_parent a:focus {
-	color: #004A71;
-	border-bottom: 1px solid #ddd;
+	color: #006699;
 }
 
 
@@ -231,7 +235,6 @@ nav li.current_page_parent a:focus {
 /* CONTENT */
 #content {
 	float: left;
-	width: 500px;
 }
 		
 #content h2	{
@@ -391,24 +394,23 @@ nav li.current_page_parent a:focus {
 
 
 /* SIDEBAR */
-#secondary {
-	float: right;
-	width: 200px;
-	padding-bottom: 20px;
+#primary {
+	padding-top: 50px;
+	padding-left: 10px;
 }
 	
-#secondary p, 
-#secondary ol, 
-#secondary ul,
-#secondary dl {
+#primary p, 
+#primary ol, 
+#primary ul,
+#primary dl {
 	font-size: 13px;
 	color: #444;
 	line-height: 150%;
 	margin: 0px 0px 10px 0px;
 }
 
-#secondary h2, 
-#secondary h3 {
+#primary h2, 
+#primary h3 {
 	border-bottom: 1px solid #ddd;
 	color: #004A71;
 	margin:15px 0 5px;
@@ -417,37 +419,37 @@ nav li.current_page_parent a:focus {
 	font-size:1.17em;
 }
 
-#secondary li {
+#primary li {
 	line-height: 150%;
 	list-style: none;
 	padding: 0 0 0 7px; 
 	margin-bottom: 4px;
 }
 	
-#secondary li a {
+#primary li a {
 	border-bottom: none;
 	color:#444;
 }
 	
-#secondary li a:hover,
-#secondary li a:focus {
+#primary li a:hover,
+#primary li a:focus {
 	border-bottom: 1px solid #ddd;
 	color:#004A71;
 }
 			
-#secondary li.current_page_item a {
+#primary li.current_page_item a {
 	color:#888;
 	border-bottom: 1px solid #ddd;
 }
 		
-#secondary li.current_page_item a:hover,
-#secondary li.current_page_item a:focus {
+#primary li.current_page_item a:hover,
+#primary li.current_page_item a:focus {
 	color: #333;
 	border-bottom: 1px solid #ddd;
 }
 	
-#secondary img, 
-#secondary iframe {
+#primary img, 
+#primary iframe {
 	padding: 5px;
 	margin: 5px 0;
 	border: 1px solid #ddd;
@@ -456,41 +458,17 @@ nav li.current_page_parent a:focus {
 /* FOOTER */
 	
 footer {
+	width:90%;
+	margin:0px auto;
 	clear: both;
-	height: 50px; 	/* change height as needed to fit your background image */
+	height: 75px; 	/* change height as needed to fit your background image */
 	padding: 6px 0 0;
-	font-size: 12px;
+	font-size: 14px;
 }
-	
-	
-/* OPTIONAL WIDGET AREA IN FOOTER */
-#widget-foot {
-	clear: both;
-	overflow:hidden;
-	margin: 0 auto 20px auto;
-	padding: 12px 0 0;
-}
-		
-#widget-foot h2, 
-#widget-foot h3 {
-	border-bottom: 1px solid #ddd;
-	color: #004A71;
-	margin:15px 0 5px;
-	padding-bottom:3px;
-	text-align: left;
-	font-size:1.17em;
+footer p {
+	text-align:center;
 }
 
-#widget-foot li {
-	float:left;
-	width: 215px;
-	margin-right:30px;		
-	list-style-image:none;
-	list-style-position:outside;
-	list-style-type:none;
-}
-
-	
 /* FORM STYLES */
 
 textarea, input, select {

@@ -1,8 +1,4 @@
 <?php get_header(); ?>
-
-<!-- START SIDEBAR -->
-<?php get_sidebar(); ?>
-<!-- END SIDEBAR -->
                 
 <!-- START CONTENT -->
 <div id="content" class="index">
@@ -21,11 +17,6 @@
      	<?php edit_post_link('Edit this entry.', '<p><small>', '</small></p>'); ?>
         </div>
     <?php endwhile; ?>
-
-		<nav class="post-nav">
-            <p class="alignleft"><?php next_posts_link('&laquo; Older Posts') ?></p>
-            <p class="alignright"><?php previous_posts_link('Newer Posts &raquo;') ?></p>
-		</nav>
         
 <?php endif; ?>
 </div><!-- END CONTENT -->

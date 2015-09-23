@@ -18,10 +18,18 @@
      <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-
+	
+<div id="side">
+	
+<!-- START SIDEBAR -->
+<?php get_sidebar('primary'); ?>
+<!-- END SIDEBAR -->
+	
+	</div><!--END DIV SIDE-->
+	
 <div id="wrapper">
 <header>
-   
+	<img src="http://build.theseattlefiles.com/wp-content/uploads/2015/09/seattle_chris_cover_one.jpg" alt="header img" />
 </header>
 
 <!-- START NAVIGATION -->

@@ -1,9 +1,5 @@
 <?php get_header(); ?>
 
-<!-- START SIDEBAR -->
-<?php get_sidebar(); ?>
-<!-- END SIDEBAR -->
-
 <!-- START CONTENT -->
 
 <div id="content" class="search">

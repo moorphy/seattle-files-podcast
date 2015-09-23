@@ -1,4 +1,4 @@
-<aside id="secondary"> 	<?php /*?> the aside's id is used for CSS styling <?php */?>
+<aside id="primary"> 	<?php /*?> the aside's id is used for CSS styling <?php */?>
 	<?php if ( is_active_sidebar( 'primary' ) ) : ?>  
 
 		<?php dynamic_sidebar( 'primary' ); ?>
