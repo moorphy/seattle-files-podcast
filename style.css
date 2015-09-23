@@ -46,17 +46,18 @@ Text Domain: seattle-files-podcast
 
 }
 @font-face {
-    font-family: 'conspiracy_pressrelease';
-    src: url('fonts/conspr__-webfont.eot');
-    src: url('fonts/conspr__-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/conspr__-webfont.woff2') format('woff2'),
-         url('fonts/conspr__-webfont.woff') format('woff'),
-         url('fonts/conspr__-webfont.ttf') format('truetype'),
-         url('fonts/conspr__-webfont.svg#conspiracy_pressrelease') format('svg');
+    font-family: 'hamburgerheavenregular';
+    src: url('fonts/hambh___-webfont.eot');
+    src: url('fonts/hambh___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/hambh___-webfont.woff2') format('woff2'),
+         url('fonts/hambh___-webfont.woff') format('woff'),
+         url('fonts/hambh___-webfont.ttf') format('truetype'),
+         url('fonts/hambh___-webfont.svg#hamburgerheavenregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
+
 /* RESETS */
 body, body * {
 	margin: 0; 
@@ -124,19 +125,16 @@ a:focus {
 /* LAYOUT */
 
 #wrapper {
-	width:80%;
-	margin: 0px auto;
-	overflow: hidden;
-	float:right;
-	background-color: #FFFFF1;
-	border-left : 1px solid #004A71;
-	box-shadow : 10px 0px 5px 1px #eaeaea;
-}
-#side {
-	width:19%;
+	width:75%;
 	margin: 0px auto;
 	overflow: hidden;
 	float:left;
+}
+#side {
+	width:25%;
+	margin: 0px auto;
+	overflow: hidden;
+	float:right;
 }
 
 
@@ -181,23 +179,23 @@ h1 a:focus {
 /* NAVIGATION */
 nav {
     width:100%;
-	font-family: 'archivo_blackregular';
+	margin: 0 auto;
+	padding-left: 7%;
+	font-family: 'hamburgerheavenregular';
     text-shadow:#A3A3A3 1px 2px 1px;
-    font-size:25px;
-    line-height:30px;
+    font-size:30px;
     clear:both;
+	background: #FF1919;
 }
 
 nav ul {
-	padding: 12px 0 0;
-	margin: 0px auto;
-	text-decoration: none;
+	list-style-type: none;
+	padding:0;
 }
 
 nav li {
 	float:left;
-	text-decoration: none;
-	padding:2%;
+	width:15.5%;
 }
 
 nav li a:link, 
@@ -230,11 +228,15 @@ nav li.current_page_parent a:focus {
 	color: #006699;
 }
 
-
+hr {
+	width:90%;
+	margin:0 auto;
+}
 
 /* CONTENT */
 #content {
 	float: left;
+	padding:2%;
 }
 		
 #content h2	{
@@ -395,8 +397,8 @@ nav li.current_page_parent a:focus {
 
 /* SIDEBAR */
 #primary {
-	padding-top: 50px;
-	padding-left: 10px;
+	border-left:2px solid #FFFFF;
+	padding:20% 2% 0% 2%;
 }
 	
 #primary p, 
@@ -410,7 +412,8 @@ nav li.current_page_parent a:focus {
 }
 
 #primary h2, 
-#primary h3 {
+#primary h3 {		
+	font-family: 'hamburgerheavenregular';
 	border-bottom: 1px solid #ddd;
 	color: #004A71;
 	margin:15px 0 5px;
@@ -448,13 +451,6 @@ nav li.current_page_parent a:focus {
 	border-bottom: 1px solid #ddd;
 }
 	
-#primary img, 
-#primary iframe {
-	padding: 5px;
-	margin: 5px 0;
-	border: 1px solid #ddd;
-}
-
 /* FOOTER */
 	
 footer {
