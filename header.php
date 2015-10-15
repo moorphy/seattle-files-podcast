@@ -20,17 +20,13 @@
 <body <?php body_class(); ?>>
 	
 	<header>
-	<img src="http://build.theseattlefiles.com/wp-content/uploads/2015/09/seattlefilesheader.jpg" alt="header img" />
+	<a href="http://theseattlefiles.com"> <img src="http://build.theseattlefiles.com/wp-content/uploads/2015/09/seattlefilesheader.jpg" alt="header img" /></a>
 		
 </header>
-	
-<div id="side">
-	
-<!-- START SIDEBAR -->
-<?php get_sidebar('primary'); ?>
-<!-- END SIDEBAR -->
-	
-	</div><!--END DIV SIDE-->
+	<div id="mobileheader">
+	<a href="http://theseattlefiles.com"> <img src="http://build.theseattlefiles.com/wp-content/uploads/2015/09/Seattle_Chris_profile_one.jpg" alt="mobile header img" /></a>
+	</div>
+
 	
 <div id="wrapper">
 
@@ -41,13 +37,14 @@
 			'theme_location' => 'main-menu' ,
 			'menu' => 'Main Menu' ,
 			'container'  => 'ul', 
-
 		) ); ?>
    
 </nav>
-	 <hr />
+	 <hr class="mainnav" />
+	
 <!-- END NAVIGATION -->
 
+	
+	
 <!-- START MIDDLE -->
 <div id="middle">
-

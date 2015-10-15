@@ -42,8 +42,8 @@ if ( function_exists( 'register_nav_menus' ) ) {
 		  'main-menu' => 'Main Menu'
 		)
 	);
-}   
-   
+}
+
 //Register sidebars
 add_action( 'widgets_init', 'my_register_sidebars' );
 

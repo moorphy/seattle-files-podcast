@@ -4,17 +4,12 @@
 		<?php dynamic_sidebar( 'primary' ); ?>
 
 	<?php else : ?>
-    
-<?php /*?> 
-Replace the code below with whatever default code you want to display in the sidebar when no widgets are active. 
-Here are some examples: 
-<?php */?>
 
       <h3>Primary Sidebar</h3>
-        <p>Look, it's the Primary Sidebar!</p>
+        <p>primary</p>
 
  		<h3>Search</h3>
-			<?php get_search_form(); /* outputs the default Wordpress search form */ ?>        
+			<?php get_search_form(); ?>        
 
         <!-- Begin Categories -->
 		<h3>Categories</h3>
@@ -31,8 +26,6 @@ Here are some examples:
         <?php wp_meta(); ?>
         </ul>
     	<!-- End Meta -->
-        
-<?php /*?> end default code to display in the sidebar when no widgets are active. <?php */?>
 
 	<?php endif; ?>
 </aside><!-- /secondary -->

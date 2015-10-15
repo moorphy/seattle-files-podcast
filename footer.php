@@ -5,6 +5,16 @@
 
 
 </div><!-- END WRAPPER -->
+
+<div id="side">
+
+<!-- START SIDEBAR -->
+<?php get_sidebar('primary'); ?>
+<!-- END SIDEBAR -->
+	
+	</div><!--END DIV SIDE-->
+
+
 <footer>
 <hr />
 <p>Copyright <?php print ("&copy; " . date ('Y') . " "); ?> &bull;
