@@ -14,6 +14,13 @@
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
     <link rel="shortcut icon" href="<?php echo esc_url( get_template_directory_uri() ); ?>/favicon.ico" />
+	
+	<!-- Begin Scripts -->
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<!-- End Scripts -->
+	
     
      <?php wp_head(); ?>
 </head>
@@ -36,7 +43,9 @@
         <?php wp_nav_menu( array( 
 			'theme_location' => 'main-menu' ,
 			'menu' => 'Main Menu' ,
-			'container'  => 'ul', 
+			'menu_class' => 'dropdown', //Adding the class for dropdowns
+    		'container_id' => 'cssmenu', //Add CSS ID to the containter that wraps the menu.
+    		'fallback_cb' => 'wp_page_menu', //if wp_nav_menu is unavailable, WordPress displays wp_page_menu function, which displays the pages of your blog.
 		) ); ?>
    
 </nav>
