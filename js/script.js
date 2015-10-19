@@ -3,7 +3,7 @@
   $.fn.menumaker = function(options) {
       
       var cssmenu = $(this), settings = $.extend({
-        title: "Menu",
+        title: "The Seattle Files",
         format: "dropdown",
         sticky: false
       }, options);
@@ -65,7 +65,7 @@ $(document).ready(function(){
 
 $(document).ready(function() {
   $("#cssmenu").menumaker({
-    title: "Menu",
+    title: "The Seattle Files",
     format: "multitoggle"
   });
 
