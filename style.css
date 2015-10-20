@@ -344,6 +344,7 @@ nav ul li {
 #cssmenu ul ul li a:hover {
   color: #696969;
 }
+
 @media all and (max-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
   #cssmenu {
     width: 100%;
@@ -483,13 +484,21 @@ hr {
 	float: left;
 	padding:2%;
 }
-		
+#content h1	{
+	font-family: 'hamburgerheavenregular';
+	color: #004A71;
+	margin:0 auto;
+	clear: both;
+	padding-bottom:3px;
+	text-align: left;
+	font-size:2em;
+}
+
 #content h2	{
 	clear: both;
 	font-weight: bold;
 	color: #004A71;
 	font-size:22px;
-	margin: 15px 0 10px;
 }
 
 #content h2 a {
@@ -634,10 +643,42 @@ hr {
 }	
 
 #content img {
+	max-width: 100%;
 	padding: 4px;
 	border: 1px solid #ddd;
 }
+#content .post-meta li{
+	list-style: none;
+	font-family: 'hamburgerheavenregular';
+	color:#9C2E2E;
+	margin:0 auto;
+	font-size:1.8em;
+	
+	
+}
+#content .post-meta-key{
+	display:none;
+}
+	
+#content img.print {
+	float: right;
+	border: none;
+	clear:both;
+	margin-bottom: 20px;
+}
 		
+#content object { 
+	margin: 0 0 10px 0px ; 
+}
+	
+#content pre {
+	max-height: 300px;
+	font-size: 12px;
+	padding: 10px;
+	margin: 10px 0px;
+	overflow: auto;
+}
+	
 
 
 /* SIDEBAR */
@@ -836,27 +877,7 @@ div.hentry {
 	float: left;
 	margin: 0 10px 10px 0;
 }
-	
 
-#content img.print {
-	float: right;
-	border: none;
-	clear:both;
-	margin-bottom: 20px;
-}
-		
-#content object { 
-	margin: 0 0 10px 0px ; 
-}
-	
-#content pre {
-	max-height: 300px;
-	font-size: 12px;
-	padding: 10px;
-	margin: 10px 0px;
-	overflow: auto;
-}
-	
 
 	
 .clear {
@@ -873,8 +894,9 @@ div.hentry {
 }
 
 .postmetadata {
-	font-size:12px;
+	font-size:1em;
 	font-style:italic;
+	border-bottom: 1px solid #ddd;
 }
 
 .sticky {

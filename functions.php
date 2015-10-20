@@ -69,6 +69,10 @@ function get_seo() {
 	echo $mySEO;
 }
 
+//create page excerpts
+add_post_type_support('page', 'excerpt');
+
+
 // Remove rel attribute from the category list
 function remove_category_list_rel($output)
 {
