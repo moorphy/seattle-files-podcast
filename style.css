@@ -112,16 +112,19 @@ a:focus {
 
 
 /* LAYOUT */
-
+#middle {
+	width:80%;
+	margin: 0 auto;
+}
 #wrapper {
 	width:75%;
-	margin: 0px auto;
+	margin: 0 auto;
 	overflow: hidden;
 	float:left;
 }
 #side {
 	width:25%;
-	margin: 0px auto;
+	margin: 0 auto;
 	overflow: hidden;
 	float:right;
 }
@@ -447,7 +450,7 @@ h1 {
 	
 h1 a:link, 
 h1 a:visited {
-	color: #004A71;
+	color: #B81212;
 	text-decoration: none;
 }
 
@@ -478,7 +481,7 @@ hr {
 #content h1	{
 	font-family: 'hamburgerheavenregular';
 	text-shadow:#A3A3A3 1px 2px 1px;
-	color: #004A71;
+	color: #B81212;
 	margin:0 auto;
 	clear: both;
 	text-align: left;
@@ -486,11 +489,12 @@ hr {
 }
 
 #content h2	{
+	font-family: 'hamburgerheavenregular';
 	clear: both;
 	color: #004A71;
 	text-shadow:#A3A3A3 1px 2px 1px;
-	font-size:1.5em;
-	line-height:1.85em;
+	font-size:2.15em;
+	line-height:1.15em;
 }
 
 #content h2 a {
@@ -510,11 +514,12 @@ hr {
 }
 		
 #content h3	{
-	clear: both;
-	color: #444;
-	font-size: 19px;
-	font-weight: 400;
-	margin-bottom: 4px;
+	font-family: 'hamburgerheavenregular';
+	text-shadow:#A3A3A3 1px 2px 1px;
+	color: #004A71;
+	text-align: left;
+	font-size: 1.85em;
+	line-height:1em;
 }
 
 #content h3 a {
@@ -529,9 +534,11 @@ hr {
 }		
 	
 #content h4	{
+	font-family: 'hamburgerheavenregular';
+	text-shadow:#A3A3A3 1px 2px 1px;
 	clear: both;
 	color:#333;
-	font-size: 15px;
+	font-size: 1.25em;
 	font-weight: bold;
 	margin-bottom: 4px;
 }
@@ -549,7 +556,6 @@ hr {
 		
 #content p {
 	font-family: 'fjordone';
-	font-style: italic;
 	margin: 0 0 10px 0;
 }
 			
@@ -639,7 +645,7 @@ hr {
 #content img {
 	max-width: 100%;
 	padding: 4px;
-	border: 1px solid #ddd;
+	box-shadow: #A3A3A3 2px 3px 2px;
 }
 #content .post-meta li{
 	list-style: none;
@@ -673,7 +679,10 @@ hr {
 	overflow: auto;
 }
 	
-
+/*PODCAST PLAYER STUFF*/
+.powerpress_player{
+	display:none;
+}
 
 /* SIDEBAR */
 #primary {
@@ -767,12 +776,6 @@ footer p {
 textarea, input, select {
 	margin-bottom:6px;
 }
-
-/*SIDEBAR PICTURE WIDTHS*/
-#text-4 img {
-	max-width: 30%;
-}
-	
 				
 		
 /*  ---------------  BEGIN WORDPRESS-GENERATED SELECTORS  ---------------  */		
@@ -821,9 +824,14 @@ div.hentry {
 	
 #comments-box,
 #respond {
+	font-family: 'fjordone';
+	margin:0 auto;
 	clear: both; 	/* clears floated prev/next nav on comments.php template */	
 }
-	
+#comments-box{
+	width:80%;
+}
+
 	
 /* COMMENTS */
 
@@ -968,6 +976,8 @@ header{
 	}
 
 #primary {
+	width:80%;
+	margin: 0 auto;
 	padding:2%;
 }
 

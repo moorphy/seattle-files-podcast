@@ -2,9 +2,14 @@
 
 <div id="content">
 
-	<h2>Error 404</h2>
-    <p>Sorry, the page you are looking for doesn't exist.</p>
-   
+	<h2>Hey Neighbor: </h2>
+    <br />
+    <h4>Sorry, something has blown up the Internets</h4>
+    <br />
+    <h5>Do a Search in the Searchbar to find what you are looking for. </h5>
+    <br />
+    <h4>-MGMT</h4>
+
 </div>
 
 <?php get_footer(); ?>
