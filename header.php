@@ -50,7 +50,7 @@
 	
 <!-- END NAVIGATION -->
 	<div id="mobileheader">
-	<a href="http://theseattlefiles.com"> <img src="http://build.theseattlefiles.com/wp-content/uploads/2015/09/Seattle_Chris_profile_one.jpg" alt="mobile header img" /></a>
+	<a href="http://theseattlefiles.com"> <img src="http://theseattlefiles.com/wp-content/uploads/2015/09/Seattle_Chris_profile_one.jpg" alt="mobile header img" /></a>
 	</div>
 	
 	
