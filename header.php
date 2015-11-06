@@ -27,7 +27,7 @@
 <body <?php body_class(); ?>>
 	
 	<header>
-	<a href="http://theseattlefiles.com"> <img src="http://theseattlefiles.com/wp-content/uploads/2015/10/seattlefilesheader.jpg" alt="header img" /></a>
+	<a href="http://theseattlefiles.com"> <img src="http://theseattlefiles.com/wp-content/uploads/2015/11/seattlefilesheader.jpg" alt="header img" /></a>
 		
 </header>
 

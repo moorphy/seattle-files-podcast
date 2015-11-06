@@ -678,6 +678,12 @@ hr {
 	margin: 10px 0px;
 	overflow: auto;
 }
+
+.wp-caption-text {
+	font-family: 'hamburgerheavenregular';
+	font-size: 18px;
+	text-align: right;
+}
 	
 /*PODCAST PLAYER STUFF*/
 .powerpress_player{
